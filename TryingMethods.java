@@ -24,7 +24,7 @@ public class TryingMethods {
         }
     }
 
-<<<<<<< HEAD
+
      void PrintExamsScore(int mark) {
         
         if(mark>=80){
@@ -37,9 +37,9 @@ public class TryingMethods {
             System.out.println("You had C");
         }
     }
-=======
+
    
->>>>>>> 2a57cbabb6ab64e552401249aa9a59453dd4b45a
+
 
      public static void main(String[] args) {
         
@@ -50,12 +50,12 @@ public class TryingMethods {
         String day = dynamTryingMethods.dayOfWeek(4);
          System.out.println("The day is "+ day);
 
-<<<<<<< HEAD
+
          // Print Exams Score
         dynamTryingMethods.PrintExamsScore(50);
-=======
 
->>>>>>> 2a57cbabb6ab64e552401249aa9a59453dd4b45a
+
+
 
         
      }
