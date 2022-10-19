@@ -50,6 +50,7 @@ public class TryingMethods {
         System.out.println("Sum of numbers with while loop is :" +sum);
      }
  
+<<<<<<< HEAD
 
          public static void sumOfEven() {
         int i,  sum=0;  
@@ -63,6 +64,8 @@ public class TryingMethods {
             }  
             System.out.println("sum of even numbers between 12 and 103 is  "+sum);
      }
+=======
+>>>>>>> 1b29946f2dcd4e588b7df38e7f9960dd193ed48a
 
      public static void main(String[] args) {
         
@@ -79,7 +82,10 @@ public class TryingMethods {
         System.out.println("");
         System.out.println("Static Methods");
         sumWithWhile( );
+<<<<<<< HEAD
         sumOfEven();
+=======
+>>>>>>> 1b29946f2dcd4e588b7df38e7f9960dd193ed48a
         
      }
 
