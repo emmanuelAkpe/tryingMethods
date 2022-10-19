@@ -24,7 +24,6 @@ public class TryingMethods {
         }
     }
 
-
      void PrintExamsScore(int mark) {
         
         if(mark>=80){
@@ -38,8 +37,19 @@ public class TryingMethods {
         }
     }
 
-   
+        //  Static Methods
 
+     public static void sumWithWhile( ) {
+         int  i = 1 ;
+        int sum = 0;    
+        while(i < 1000)
+        {
+            sum = sum +i;
+            i++;
+        }
+        System.out.println("Sum of numbers with while loop is :" +sum);
+     }
+ 
 
      public static void main(String[] args) {
         
@@ -50,13 +60,12 @@ public class TryingMethods {
         String day = dynamTryingMethods.dayOfWeek(4);
          System.out.println("The day is "+ day);
 
-
          // Print Exams Score
         dynamTryingMethods.PrintExamsScore(50);
 
-
-
-
+        System.out.println("");
+        System.out.println("Static Methods");
+        sumWithWhile( );
         
      }
 
