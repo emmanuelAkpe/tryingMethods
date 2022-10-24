@@ -3,7 +3,9 @@ public class TryingMethods {
      * The trying methods has a number of methods 
      * that we use to perform specific tasks
      */
-  String dayOfWeek(int day){
+
+
+    String dayOfWeek(int day){
         switch(day){
             case 1:
                 return "Monday";
@@ -24,7 +26,9 @@ public class TryingMethods {
         }
     }
 
-     void PrintExamsScore(int mark) {
+     
+
+    void PrintExamsScore(int mark) {
         
         if(mark>=80){
             System.out.println("You had A");
@@ -36,8 +40,31 @@ public class TryingMethods {
             System.out.println("You had C");
         }
     }
+     public static void main(String[] args) {
 
-        //  Static Methods
+        // Creating an Instance of the class
+        TryingMethods dynamTryingMethods = new TryingMethods();
+      
+            System.out.println("Dynamic Methods");
+        displayLine();
+        String day = dynamTryingMethods.dayOfWeek(4);
+         System.out.println("The day is "+ day);
+        // Print Exams Score
+        dynamTryingMethods.PrintExamsScore(50);
+
+
+        // Static Methods
+     System.out.println("");
+        System.out.println("Static Methods");
+        displayLine();
+        sumWithWhile( );
+        sumOfEven();
+
+        
+     }
+
+
+    //  Static Methods
 
      public static void sumWithWhile( ) {
          int  i = 1 ;
@@ -47,27 +74,28 @@ public class TryingMethods {
             sum = sum +i;
             i++;
         }
-        System.out.println("Sum of numbers with while loop is :" +sum);
+        System.out.println("Sum of numbers is :" +sum);
      }
  
 
-     public static void main(String[] args) {
-        
-               // Creating an Instance of the class
-        TryingMethods dynamTryingMethods = new TryingMethods();
-      
-            System.out.println("Dynamic Methods");
-        String day = dynamTryingMethods.dayOfWeek(4);
-         System.out.println("The day is "+ day);
+     public static void sumOfEven() {
+        int i,  sum=0;  
+         for(i=13; i<=103; i++) 
+         
+            {  
+                if(i%2 == 0){
 
-         // Print Exams Score
-        dynamTryingMethods.PrintExamsScore(50);
-
-        System.out.println("");
-        System.out.println("Static Methods");
-        sumWithWhile( );
-        
+                    sum += i;   
+                }
+            }  
+            System.out.println("sum of even numbers between 12 and 103 is  "+sum);
      }
 
+     public static void displayLine() {
+        for (int i = 1; i < 40; i++) {
+            System.out.print("_");
+        }
 
+        System.out.println("");
+     }
 }
